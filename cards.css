@@ -22,49 +22,31 @@
     margin-top: 0.5rem;
 }
 
-.category-guitar, .category-rock {background: #a2a79e;}
+/* .category-guitar, .category-rock {background: #a2a79e;}
 .category-violin, .category-metal {background: #a27e8e;}
 .category-drum, .category-classic {background: #a77464;}
 .category-vocal, .category-pop {background: #88292f;}
-.category-bass {background: #2e1e0f;}
+.category-bass {background: #2e1e0f;} */
+
+.category-guitar, .category-rock {background: rgb(189, 45, 45);}
+.category-violin, .category-metal {background: rgb(189, 45, 45);}
+.category-drum, .category-classic {background: rgb(189, 45, 45);}
+.category-vocal, .category-pop {background: rgb(189, 45, 45);}
+.category-bass {background: rgb(189, 45, 45);}
 
 .musician-container, .band-container {
     display: flex;
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    background-color: #fff;
     justify-content: center;
     height: 100%;
-    background: #d3b9b1;
-}
-
-.musician-container .guitar-card {
-    flex: 1;
-    height: 100%;
-}
-.musician-container .drum-card {
-    flex: 1;
-    height: 100%;
-}
-.musician-container .vocal-card {
-    flex: 1;
-    height: 100%;
-}
-.musician-container .bass-card {
-    flex: 1;
-    height: 100%;
-}
-.musician-container .violin-card {
-    flex: 1;
-    height: 100%;
+    /* background: #d3b9b1; */
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 100%;
+    justify-content: space-evenly;
     width: 100%;
     background: #fff;
     padding: 5px;
@@ -72,28 +54,48 @@
     border-radius: 5%;
 }
 
-.card img {
+img {
     width: 100%;
-    height: 100%;
-    flex: 1;
+    height: 200px;
     padding-bottom: 5px;
     border-radius: 50%;
 }
 
 .card .text {
-    flex: 1;
-    border-top: 1px #333 dotted;
+    /* border-top: 1px #333 dotted; */
+    color: #fff;
 }
 
+.card .text p {
+    margin: 5px;
+}
+
+.guitar-card {
+    background: #a2a79e
+}
+.drum-card {
+    background: #a27e8e;
+}
+.vocal-card {
+    background: #a77464;
+}
+.bass-card {
+    background: #88292f;
+}
+.violin-card {
+    background: #2e1e0f;
+}
+
+
 .rock-card {
-    flex: 1;
+    background: #a27e8e;
 }
 .metal-card {
-    flex: 1;
+    background: #a77464;
 }
 .classic-card {
-    flex: 1;
+    background: #88292f;
 }
 .pop-card {
-    flex: 1;
+    background: #2e1e0f;
 }
